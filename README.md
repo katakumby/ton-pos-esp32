@@ -1,13 +1,11 @@
 # ton-pos-esp32
 
-## Whats this about? 
-We want to create open way for merchants to process transactions without a need to rely on current processors.
-This repository contains basic PoC of approx $40 prototype device that can be connected to DEX (wifi) and controlled by bluetoth at the same time keeping very long vattery lifetime ( some charging may be beedev once per few months)
+## Idea description 
+We are excited to present our solution for merchants to process daily transactions, without relying on a single payment solution, through the use of Dex integration. This repository showcases the proof-of-concept of an affordable prototype device of approximately $40 that can be connected to Dex (wifi) and controlled by Bluetooth simultaneously while maintaining an extended battery lifetime (minimum of a few months). Device can be extended by optional receipt printer module to print onchain information to real world in a form of NFT.
+
 
 ## Example scenario
-Device can be used by Merchant employee just to control flow of orders, device can automaticlly handle tokens / currency pairs additionally with option for reciept print with onchain confirmations / informations  
-
-
+Our device can be efficiently used by merchant employees to control the flow of orders. The device's user can quickly perform token/currency pairs swaps and generate receipts with on-chain confirmations/informations. 
 Used modules:
 - Board Espressif ESP32 DevKit ESP-WROOM-32 V2 7,7$ (https://sklep.msalamon.pl/produkt/esp32-devkit-esp-wroom-32-v2/)
 - E-Ink screen 34$ (https://elty.pl/pl/p/Modul-z-wyswietlaczem-E-Ink-4.2-400x300/2036, after tests we consider it too big)

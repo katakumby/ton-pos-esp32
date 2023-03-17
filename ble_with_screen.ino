@@ -1,9 +1,3 @@
-/*
-    Based on Neil Kolban example for IDF: https://github.com/nkolban/esp32-snippets/blob/master/cpp_utils/tests/BLE%20Tests/SampleServer.cpp
-    Ported to Arduino ESP32 by Evandro Copercini
-    updates by chegewara
-*/
-
 #include <BLEDevice.h>
 #include <BLEUtils.h>
 #include <BLEServer.h>
@@ -166,36 +160,13 @@ void testNfc()
 
   // comment out this command for no ndef message
   nfc.setNdefFile(ndefBuf, messageSize);
-  // roll_pitch();
 
-  // uncomment for overriding ndef in case a write to this tag occured
-  // nfc.setNdefFile(ndefBuf, messageSize);
-
-  // start emulation (blocks)
   nfc.emulate();
-
-  // or start emulation with timeout
-//   if(!nfc.emulate(6000)){ // timeout 1 second
-//     Serial.println("timed out");
-//   }
-
-  // deny writing to the tag
-  // nfc.setTagWriteable(false);
-
-  // if(nfc.writeOccured()){
-  //    Serial.println("\nWrite occured !");
-  //    uint8_t* tag_buf;
-  //    uint16_t length;
-
-  //    nfc.getContent(&tag_buf, &length);
-  //    NdefMessage msg = NdefMessage(tag_buf, length);
-  //    msg.print();
-  // }
 
   Serial.println("\n exit Nfc!");
   delay(1000);
 }
-class MyCallbacks: public BLECharacteristicCallbacks {
+class DeepLink: public BLECharacteristicCallbacks {
     void onWrite(BLECharacteristic *pCharacteristic) {
       std::string value = pCharacteristic->getValue();
 
@@ -241,8 +212,8 @@ void setup() {
                                          BLECharacteristic::PROPERTY_WRITE
                                        );
 
-  pCharacteristic->setValue("Hello World says Neil");
-  pCharacteristic->setCallbacks(new MyCallbacks());
+  pCharacteristic->setValue("#blank");
+  pCharacteristic->setCallbacks(new DeepLink());
   
   pService->start();
   // BLEAdvertising *pAdvertising = pServer->getAdvertising();  // this still is working for backward compatibility

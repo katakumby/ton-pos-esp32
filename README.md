@@ -31,6 +31,13 @@ Optional module:
 PN532_HSU pn532hsu(Serial2); <-- Serial  
 ```
 
+### 3D Print
+Import STL file into slicer, (im using cura) set:
+- Infill 70%
+- Layer 0.2mm
+
+Examples printed on Ender 3 S1 Plus.
+
 ### How to compile
 Firstly install dependencies from libraries.zip( right now its a compressed modified version  version of 3rd party libraries with resolved conflicts)
 

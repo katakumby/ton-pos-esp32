@@ -31,7 +31,15 @@ Optional module:
 PN532_HSU pn532hsu(Serial2); <-- Serial  
 ```
 
+### How to compile
+Firstly install dependencies from libraries.zip( right now its a compressed modified version  version of 3rd party libraries with resolved conflicts)
+
+Then using Arduino IDE open  ble_with_screen.ino, remember to set and import ESP32 board ex. https://www.upesy.com/blogs/tutorials/install-esp32-on-arduino-ide-complete-guide
+
+
+
 # SDK
+Here is repo in which you can find example how to connect straight from the browser with device and execute DeepLink action.
 Repo link: https://github.com/Kubaszenko/TonpayIoTSDK
 
 

@@ -12,7 +12,9 @@ Used modules:
 - Board Espressif ESP32 DevKit ESP-WROOM-32 V2 7,7$ (https://sklep.msalamon.pl/produkt/esp32-devkit-esp-wroom-32-v2/)
 - E-Ink screen 34$ (https://elty.pl/pl/p/Modul-z-wyswietlaczem-E-Ink-4.2-400x300/2036, after tests we consider it too big)
 - NFC PN532 reader ,7$ (https://kamami.pl/rfid/564011-modrfid-nfc-pn532-modul-bezstykowej-identyfikacji-rfidnfc.html) 
-- 3D Print - priceless :) 
+- 3D Print - priceless :) check example betacase.stl (https://cults3d.com/en/3d-model/gadget/tonpos-beta-example)
+![alt text](https://files.cults3d.com/uploaders/27558711/illustration-file/e9c71df2-d33f-4180-a889-bd99da1e45e6/Przechwytywanie.png "Example case")
+
 
 Optional module:
 - Recipt printer (comming soon)
